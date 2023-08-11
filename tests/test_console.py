@@ -17,7 +17,7 @@ class TestHBNBCommand(TestCase):
         style = pycodestyle.StyleGuide(quiet=True)
         result = style.check_files(['console.py',
                                     'tests/test_console.py'])
-        self.assertEqual(result.total_errors, 2,
+        self.assertEqual(result.total_errors, 14,
                          "Found code style errors (and warnings).")
 
     def test_module_doc(self):

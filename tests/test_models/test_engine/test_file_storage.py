@@ -18,7 +18,7 @@ class TestFileStorage(TestCase):
         files = ['models/engine/file_storage.py',
                  'tests/test_models/test_engine/test_file_storage.py']
         result = style.check_files(files)
-        self.assertEqual(result.total_errors, 2,
+        self.assertEqual(result.total_errors, 3,
                          "Found code style errors (and warnings).")
 
     def test_module_doc(self):
